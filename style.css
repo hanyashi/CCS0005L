@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poor Story', system-ui;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #70692c
+}
+
+header {
+    background-color: #333;
+    color: #c7bc5b;
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1 {
+    color:#c7bc5b;
+}
+
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #afa482;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-me {
+    font-size: large;
+    text-align: justify;
+}
+
+#about-me img {
+    height: 15rem;
+    margin-left: 16rem;
+    border-radius: 50%;
+}
+
+.project1, .project2, .project3 {
+    max-width: 30rem;
+}
+
+#about-me img {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-style: oblique;
+}
+
+#projects p {
+    font-size: larger;
+}
+
+.project3 {
+    height: 50rem;
+}
+
+.project {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#contact-info p {
+    font-style: oblique;
+    font-size: 17px;
+}
+
+footer {
+    background-color: #333;
+    color: #c7bc5b;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
